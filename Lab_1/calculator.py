@@ -13,19 +13,19 @@ def sum(a, b):
 def divide(a, b):
 
     if b == 0:
-        raise ValueError('Cannot divide by zero')
+        raise ZeroDivisionError('Cannot divide by zero')
+
+    isNegativeResult = a > 0 and b < 0 or a < 0 and b > 0
+
+    a = abs(a)
+    b = abs(b)
 
     result = 0
-    while a != 0:
+
+    while a - b >= 0:
         result = result + 1
-        if b > 0:
-            if a > 0:
-                a = a - b
-            else:
-                a = a + b
-        else:
-            if a > 0:
-                a = a + b
-            else:
-                a = a - b
+        a = a - b
+
+    result = -result if isNegativeResult else result
+
     return result
