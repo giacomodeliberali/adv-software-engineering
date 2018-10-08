@@ -1,0 +1,1350 @@
+{
+	"info": {
+		"_postman_id": "748db4e0-bcc4-4991-91e1-0d807a40de9e",
+		"name": "Homework1-Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/doodles 1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "63dd4b36-1f87-48b3-ad8f-683c8aa57a65",
+						"exec": [
+							"pm.test(\"Pollnumber should be 1\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.pollnumber).to.eql(1);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\" : \"poll1\", \n\t\"options\" : [\n\t\t\"1\", \"2\", \"3\"\n\t]\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/doodles",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"doodles"
+					]
+				},
+				"description": "Creates a new poll and gets the poll identifier back."
+			},
+			"response": []
+		},
+		{
+			"name": "/doodles 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2aa84b7a-a4a0-4b2a-86fe-f84986f1414d",
+						"exec": [
+							"pm.test(\"Pollnumber should be 2\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.pollnumber).to.eql(2);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\" : \"poll2\", \n\t\"options\" : [\n\t\t\"1\", \"2\"\n\t]\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/doodles",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"doodles"
+					]
+				},
+				"description": "Creates a new poll and gets the poll identifier back."
+			},
+			"response": []
+		},
+		{
+			"name": "/doodles 3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b511ecf5-da5f-47c3-9408-65c34ba3585e",
+						"exec": [
+							"pm.test(\"Pollnumber should be 3\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.pollnumber).to.eql(3);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\" : \"poll3\", \n\t\"options\" : [\n\t\t\"pizza\", \"disco\"\n\t]\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/doodles",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"doodles"
+					]
+				},
+				"description": "Creates a new poll and gets the poll identifier back."
+			},
+			"response": []
+		},
+		{
+			"name": "get all doodles",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "eb0af832-8190-4ea6-98f0-83f093d2d9c4",
+						"exec": [
+							"pm.test(\"Should get the three doodles\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.activepolls.length).to.eql(3);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\" : \"poll1\", \n\t\"options\" : [\n\t\t\"1\", \"2\", \"3\"\n\t]\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/doodles",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"doodles"
+					]
+				},
+				"description": "Creates a new poll and gets the poll identifier back."
+			},
+			"response": []
+		},
+		{
+			"name": "get doodle 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "eb0af832-8190-4ea6-98f0-83f093d2d9c4",
+						"exec": [
+							"pm.test(\"Should get the doodle 2 id\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.id).to.eql(2);",
+							"});",
+							"",
+							"pm.test(\"Should get the doodle 2 title\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.title).to.eql(\"poll2\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\" : \"poll1\", \n\t\"options\" : [\n\t\t\"1\", \"2\", \"3\"\n\t]\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/doodles/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"doodles",
+						"2"
+					]
+				},
+				"description": "Creates a new poll and gets the poll identifier back."
+			},
+			"response": []
+		},
+		{
+			"name": "get 404 doodle",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "eb0af832-8190-4ea6-98f0-83f093d2d9c4",
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {",
+							"    pm.response.to.have.status(404);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\" : \"poll1\", \n\t\"options\" : [\n\t\t\"1\", \"2\", \"3\"\n\t]\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/doodles/2222",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"doodles",
+						"2222"
+					]
+				},
+				"description": "Creates a new poll and gets the poll identifier back."
+			},
+			"response": []
+		},
+		{
+			"name": "/doodles 2 put vote",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2aa84b7a-a4a0-4b2a-86fe-f84986f1414d",
+						"exec": [
+							"pm.test(\"Pollnumber should be 2\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.winners[0]).to.eql(\"1\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"person\" : \"fred\",\n    \"option\" : \"1\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/doodles/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"doodles",
+						"2"
+					]
+				},
+				"description": "Creates a new poll and gets the poll identifier back."
+			},
+			"response": []
+		},
+		{
+			"name": "/doodles 2 put vote 1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2aa84b7a-a4a0-4b2a-86fe-f84986f1414d",
+						"exec": [
+							"pm.test(\"Winners should be 2\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.winners.length).to.eql(2);",
+							"});",
+							"",
+							"pm.test(\"Winners[0] = 1\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.winners[0]).to.eql(\"1\");",
+							"});",
+							"",
+							"pm.test(\"Winners[0] = 2\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.winners[1]).to.eql(\"2\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"person\" : \"fred\",\n    \"option\" : \"2\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/doodles/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"doodles",
+						"2"
+					]
+				},
+				"description": "Creates a new poll and gets the poll identifier back."
+			},
+			"response": []
+		},
+		{
+			"name": "/doodles 2 put vote 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2aa84b7a-a4a0-4b2a-86fe-f84986f1414d",
+						"exec": [
+							"pm.test(\"Winners should be 1\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.winners.length).to.eql(1);",
+							"});",
+							"",
+							"pm.test(\"Winners[0] = 1\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.winners[0]).to.eql(\"1\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"person\" : \"barney\",\n    \"option\" : \"1\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/doodles/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"doodles",
+						"2"
+					]
+				},
+				"description": "Creates a new poll and gets the poll identifier back."
+			},
+			"response": []
+		},
+		{
+			"name": "/doodles 2 put vote 2 error",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2aa84b7a-a4a0-4b2a-86fe-f84986f1414d",
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"person\" : \"barney\",\n    \"option\" : \"1\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/doodles/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"doodles",
+						"2"
+					]
+				},
+				"description": "Creates a new poll and gets the poll identifier back."
+			},
+			"response": []
+		},
+		{
+			"name": "/doodles 2 put non exsisting vote",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2aa84b7a-a4a0-4b2a-86fe-f84986f1414d",
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"person\" : \"wilma\",\n    \"option\" : \"8\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/doodles/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"doodles",
+						"2"
+					]
+				},
+				"description": "Creates a new poll and gets the poll identifier back."
+			},
+			"response": []
+		},
+		{
+			"name": "/doodles 2 delete",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2aa84b7a-a4a0-4b2a-86fe-f84986f1414d",
+						"exec": [
+							"pm.test(\"Should delete 1 item\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.winners.length).to.eql(1);",
+							"});",
+							"",
+							"pm.test(\"Winners[0] = 1\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.winners[0]).to.eql(\"1\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/doodles/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"doodles",
+						"2"
+					]
+				},
+				"description": "Creates a new poll and gets the poll identifier back."
+			},
+			"response": []
+		},
+		{
+			"name": "get all doodles",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "eb0af832-8190-4ea6-98f0-83f093d2d9c4",
+						"exec": [
+							"pm.test(\"Should get the 2 doodles\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.activepolls.length).to.eql(2);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\" : \"poll1\", \n\t\"options\" : [\n\t\t\"1\", \"2\", \"3\"\n\t]\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/doodles",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"doodles"
+					]
+				},
+				"description": "Creates a new poll and gets the poll identifier back."
+			},
+			"response": []
+		},
+		{
+			"name": "/doodles delete no more existing",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2aa84b7a-a4a0-4b2a-86fe-f84986f1414d",
+						"exec": [
+							"pm.test(\"Status code is 410\", function () {",
+							"    pm.response.to.have.status(410);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/doodles/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"doodles",
+						"2"
+					]
+				},
+				"description": "Creates a new poll and gets the poll identifier back."
+			},
+			"response": []
+		},
+		{
+			"name": "/doodles delete unexisting",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2aa84b7a-a4a0-4b2a-86fe-f84986f1414d",
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {",
+							"    pm.response.to.have.status(404);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/doodles/23242",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"doodles",
+						"23242"
+					]
+				},
+				"description": "Creates a new poll and gets the poll identifier back."
+			},
+			"response": []
+		},
+		{
+			"name": "get doodle 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "eb0af832-8190-4ea6-98f0-83f093d2d9c4",
+						"exec": [
+							"pm.test(\"Status code is 410\", function () {",
+							"    pm.response.to.have.status(410);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\" : \"poll1\", \n\t\"options\" : [\n\t\t\"1\", \"2\", \"3\"\n\t]\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/doodles/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"doodles",
+						"2"
+					]
+				},
+				"description": "Creates a new poll and gets the poll identifier back."
+			},
+			"response": []
+		},
+		{
+			"name": "/doodles 1 put",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2aa84b7a-a4a0-4b2a-86fe-f84986f1414d",
+						"exec": [
+							"pm.test(\"Pollnumber should be 2\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.winners[0]).to.eql(\"1\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"person\" : \"fred\",\n    \"option\" : \"1\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/doodles/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"doodles",
+						"1"
+					]
+				},
+				"description": "Creates a new poll and gets the poll identifier back."
+			},
+			"response": []
+		},
+		{
+			"name": "/doodles 1 put Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2aa84b7a-a4a0-4b2a-86fe-f84986f1414d",
+						"exec": [
+							"pm.test(\"Winners should be 2\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.winners.length).to.eql(2);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"person\" : \"fred\",\n    \"option\" : \"2\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/doodles/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"doodles",
+						"1"
+					]
+				},
+				"description": "Creates a new poll and gets the poll identifier back."
+			},
+			"response": []
+		},
+		{
+			"name": "/doodles 1 put Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2aa84b7a-a4a0-4b2a-86fe-f84986f1414d",
+						"exec": [
+							"pm.test(\"Winners should be 1\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.winners[0]).to.eql(\"1\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"person\" : \"barney\",\n    \"option\" : \"1\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/doodles/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"doodles",
+						"1"
+					]
+				},
+				"description": "Creates a new poll and gets the poll identifier back."
+			},
+			"response": []
+		},
+		{
+			"name": "get all doodles by fred",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "eb0af832-8190-4ea6-98f0-83f093d2d9c4",
+						"exec": [
+							"pm.test(\"Should get the 2 doodles\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.votedoptions).to.eql([\"1\",\"2\"]);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\" : \"poll1\", \n\t\"options\" : [\n\t\t\"1\", \"2\", \"3\"\n\t]\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/doodles/1/fred",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"doodles",
+						"1",
+						"fred"
+					]
+				},
+				"description": "Creates a new poll and gets the poll identifier back."
+			},
+			"response": []
+		},
+		{
+			"name": "get all doodles by wilma",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "eb0af832-8190-4ea6-98f0-83f093d2d9c4",
+						"exec": [
+							"pm.test(\"Should get the 2 doodles\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.votedoptions).to.eql([]);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\" : \"poll1\", \n\t\"options\" : [\n\t\t\"1\", \"2\", \"3\"\n\t]\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/doodles/1/wilma",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"doodles",
+						"1",
+						"wilma"
+					]
+				},
+				"description": "Creates a new poll and gets the poll identifier back."
+			},
+			"response": []
+		},
+		{
+			"name": "delete all doodles by fred",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "eb0af832-8190-4ea6-98f0-83f093d2d9c4",
+						"exec": [
+							"pm.test(\"Should delete\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.removed).to.eql(true);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\" : \"poll1\", \n\t\"options\" : [\n\t\t\"1\", \"2\", \"3\"\n\t]\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/doodles/1/fred",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"doodles",
+						"1",
+						"fred"
+					]
+				},
+				"description": "Creates a new poll and gets the poll identifier back."
+			},
+			"response": []
+		},
+		{
+			"name": "get all doodles by fred Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "eb0af832-8190-4ea6-98f0-83f093d2d9c4",
+						"exec": [
+							"pm.test(\"Should be empty\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.votedoptions).to.eql([]);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\" : \"poll1\", \n\t\"options\" : [\n\t\t\"1\", \"2\", \"3\"\n\t]\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/doodles/1/fred",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"doodles",
+						"1",
+						"fred"
+					]
+				},
+				"description": "Creates a new poll and gets the poll identifier back."
+			},
+			"response": []
+		},
+		{
+			"name": "delete all doodles by wilma",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "eb0af832-8190-4ea6-98f0-83f093d2d9c4",
+						"exec": [
+							"pm.test(\"Should delete\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.removed).to.eql(false);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\" : \"poll1\", \n\t\"options\" : [\n\t\t\"1\", \"2\", \"3\"\n\t]\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/doodles/1/wilma",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"doodles",
+						"1",
+						"wilma"
+					]
+				},
+				"description": "Creates a new poll and gets the poll identifier back."
+			},
+			"response": []
+		},
+		{
+			"name": "get all doodles by fred",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "eb0af832-8190-4ea6-98f0-83f093d2d9c4",
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {",
+							"    pm.response.to.have.status(404);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\" : \"poll1\", \n\t\"options\" : [\n\t\t\"1\", \"2\", \"3\"\n\t]\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/doodles/1321/fred",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"doodles",
+						"1321",
+						"fred"
+					]
+				},
+				"description": "Creates a new poll and gets the poll identifier back."
+			},
+			"response": []
+		},
+		{
+			"name": "get all doodles by fred",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "eb0af832-8190-4ea6-98f0-83f093d2d9c4",
+						"exec": [
+							"pm.test(\"Status code is 410\", function () {",
+							"    pm.response.to.have.status(410);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\" : \"poll1\", \n\t\"options\" : [\n\t\t\"1\", \"2\", \"3\"\n\t]\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/doodles/2/fred",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"doodles",
+						"2",
+						"fred"
+					]
+				},
+				"description": "Creates a new poll and gets the poll identifier back."
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "c67b15b3-9911-45d3-96fa-793eb9f3b166",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "8e692e43-04b8-4a40-931e-9f23ebd1dd51",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
