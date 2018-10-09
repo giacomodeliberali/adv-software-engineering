@@ -1,0 +1,1569 @@
+{
+	"id": "37384473-07f3-41c2-b597-0badc520489b",
+	"name": "Homework1-Test",
+	"allTests": [],
+	"timestamp": "2018-10-09T07:08:57.429Z",
+	"collection_id": "748db4e0-bcc4-4991-91e1-0d807a40de9e",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "0",
+	"data": [],
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "748db4e0-bcc4-4991-91e1-0d807a40de9e",
+		"name": "Homework1-Test",
+		"description": "",
+		"auth": null,
+		"events": [
+			{
+				"listen": "prerequest",
+				"script": {
+					"id": "c67b15b3-9911-45d3-96fa-793eb9f3b166",
+					"type": "text/javascript",
+					"exec": [
+						""
+					]
+				}
+			},
+			{
+				"listen": "test",
+				"script": {
+					"id": "8e692e43-04b8-4a40-931e-9f23ebd1dd51",
+					"type": "text/javascript",
+					"exec": [
+						""
+					]
+				}
+			}
+		],
+		"variables": [],
+		"order": [
+			"50c91453-68fc-4a70-9426-707be8f1e3ac",
+			"feb4db11-c0b7-4863-9f0e-0911040585dc",
+			"02220b04-c79c-45e9-aecf-8446af179d1a",
+			"66ee35d7-148d-4db4-95e8-c4d99bbef958",
+			"259f5f28-ae87-4754-812b-5f625e162785",
+			"8b3344f5-d143-4409-995e-9be1f223be16",
+			"5a9bdda2-41cb-42c2-b07a-9e429346e272",
+			"8422dba9-2413-4246-a38d-a639acd4830d",
+			"d0931771-00c3-4cc6-9274-53665f56f8e0",
+			"f46381f0-850a-475c-b311-c4816d581c12",
+			"acd0333f-fda3-461e-8592-dae4f016d592",
+			"258d1200-4747-4b97-9057-f04edc2f4a22",
+			"a68fdedd-d0a8-4eb8-b4b3-023068b8cee2",
+			"7ae5449c-874b-4580-8088-4b9f3e6d5ff7",
+			"97eee606-a20c-4087-839c-2ec36713ddc1",
+			"e3efd09a-cef5-4d68-be87-648aa5bb17ea",
+			"c43318ff-7468-414b-9bb1-cddc444923ff",
+			"dd755618-8e4d-46bc-b374-6f912ebcc4e4",
+			"2ed3df2a-c12b-4fd9-9b86-5afd72649d76",
+			"3510b1cf-29c9-41c8-a3cf-53149cd19dc5",
+			"2ebcaf37-ca4f-49f6-bff2-8797f666c7b5",
+			"a7be184c-5ef4-4adf-87bb-6eea99d6abf4",
+			"ca41c683-194b-44e7-bf59-c0f179ec6490",
+			"41b0ae51-c647-4176-a7fe-6dbbf7d3b7f0",
+			"4343fb39-8864-44f7-8f0a-eb2af79205f8",
+			"1b18be22-e2b3-4284-b22d-6f826f88639b"
+		],
+		"folders_order": [],
+		"owner": "1393199",
+		"permissions": {},
+		"favorite": false,
+		"shared": false,
+		"type": "collection",
+		"depth": 0
+	},
+	"folder": null,
+	"environment": null,
+	"globals": [],
+	"results": [
+		{
+			"name": "/doodles 1",
+			"id": "50c91453-68fc-4a70-9426-707be8f1e3ac",
+			"url": "http://127.0.0.1:5000/doodles",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "Pollnumber should be 1",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Pollnumber should be 1": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"18"
+			],
+			"allTests": [
+				{
+					"Pollnumber should be 1": true
+				}
+			],
+			"time": "18",
+			"totalRequestTime": "18",
+			"iterationResults": {}
+		},
+		{
+			"name": "/doodles 2",
+			"id": "feb4db11-c0b7-4863-9f0e-0911040585dc",
+			"url": "http://127.0.0.1:5000/doodles",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "Pollnumber should be 2",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Pollnumber should be 2": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"6"
+			],
+			"allTests": [
+				{
+					"Pollnumber should be 2": true
+				}
+			],
+			"time": "6",
+			"totalRequestTime": "6",
+			"iterationResults": {}
+		},
+		{
+			"name": "/doodles 3",
+			"id": "02220b04-c79c-45e9-aecf-8446af179d1a",
+			"url": "http://127.0.0.1:5000/doodles",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "Pollnumber should be 3",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Pollnumber should be 3": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"4"
+			],
+			"allTests": [
+				{
+					"Pollnumber should be 3": true
+				}
+			],
+			"time": "4",
+			"totalRequestTime": "4",
+			"iterationResults": {}
+		},
+		{
+			"name": "get all doodles",
+			"id": "66ee35d7-148d-4db4-95e8-c4d99bbef958",
+			"url": "http://127.0.0.1:5000/doodles",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "Should get the three doodles",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Should get the three doodles": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"10"
+			],
+			"allTests": [
+				{
+					"Should get the three doodles": true
+				}
+			],
+			"time": "10",
+			"totalRequestTime": "10",
+			"iterationResults": {}
+		},
+		{
+			"name": "get doodle 2",
+			"id": "259f5f28-ae87-4754-812b-5f625e162785",
+			"url": "http://127.0.0.1:5000/doodles/2",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "Should get the doodle 2 id",
+				"status": "pass",
+				"Should get the doodle 2 title": true
+			},
+			"testPassFailCounts": {
+				"Should get the doodle 2 id": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should get the doodle 2 title": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"7"
+			],
+			"allTests": [
+				{
+					"Should get the doodle 2 id": true,
+					"Should get the doodle 2 title": true
+				}
+			],
+			"time": "7",
+			"totalRequestTime": "7",
+			"iterationResults": {}
+		},
+		{
+			"name": "get 404 doodle",
+			"id": "8b3344f5-d143-4409-995e-9be1f223be16",
+			"url": "http://127.0.0.1:5000/doodles/2222",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 404,
+				"name": "NOT FOUND",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"tests": {
+				"name": "Status code is 404",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"3"
+			],
+			"allTests": [
+				{
+					"Status code is 404": true
+				}
+			],
+			"time": "3",
+			"totalRequestTime": "3",
+			"iterationResults": {}
+		},
+		{
+			"name": "/doodles 2 put vote",
+			"id": "5a9bdda2-41cb-42c2-b07a-9e429346e272",
+			"url": "http://127.0.0.1:5000/doodles/2",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "Pollnumber should be 2",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Pollnumber should be 2": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"4"
+			],
+			"allTests": [
+				{
+					"Pollnumber should be 2": true
+				}
+			],
+			"time": "4",
+			"totalRequestTime": "4",
+			"iterationResults": {}
+		},
+		{
+			"name": "/doodles 2 put vote 1",
+			"id": "8422dba9-2413-4246-a38d-a639acd4830d",
+			"url": "http://127.0.0.1:5000/doodles/2",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "Winners should be 2",
+				"status": "pass",
+				"Winners[0] = 1": true,
+				"Winners[0] = 2": true
+			},
+			"testPassFailCounts": {
+				"Winners should be 2": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Winners[0] = 1": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Winners[0] = 2": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"4"
+			],
+			"allTests": [
+				{
+					"Winners should be 2": true,
+					"Winners[0] = 1": true,
+					"Winners[0] = 2": true
+				}
+			],
+			"time": "4",
+			"totalRequestTime": "4",
+			"iterationResults": {}
+		},
+		{
+			"name": "/doodles 2 put vote 2",
+			"id": "d0931771-00c3-4cc6-9274-53665f56f8e0",
+			"url": "http://127.0.0.1:5000/doodles/2",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "Winners should be 1",
+				"status": "pass",
+				"Winners[0] = 1": true
+			},
+			"testPassFailCounts": {
+				"Winners should be 1": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Winners[0] = 1": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"4"
+			],
+			"allTests": [
+				{
+					"Winners should be 1": true,
+					"Winners[0] = 1": true
+				}
+			],
+			"time": "4",
+			"totalRequestTime": "4",
+			"iterationResults": {}
+		},
+		{
+			"name": "/doodles 2 put vote 2 error",
+			"id": "f46381f0-850a-475c-b311-c4816d581c12",
+			"url": "http://127.0.0.1:5000/doodles/2",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "BAD REQUEST",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"tests": {
+				"name": "Status code is 400",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"4"
+			],
+			"allTests": [
+				{
+					"Status code is 400": true
+				}
+			],
+			"time": "4",
+			"totalRequestTime": "4",
+			"iterationResults": {}
+		},
+		{
+			"name": "/doodles 2 put non exsisting vote",
+			"id": "acd0333f-fda3-461e-8592-dae4f016d592",
+			"url": "http://127.0.0.1:5000/doodles/2",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "BAD REQUEST",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"tests": {
+				"name": "Status code is 400",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"4"
+			],
+			"allTests": [
+				{
+					"Status code is 400": true
+				}
+			],
+			"time": "4",
+			"totalRequestTime": "4",
+			"iterationResults": {}
+		},
+		{
+			"name": "/doodles 2 delete",
+			"id": "258d1200-4747-4b97-9057-f04edc2f4a22",
+			"url": "http://127.0.0.1:5000/doodles/2",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "Should delete 1 item",
+				"status": "pass",
+				"Winners[0] = 1": true
+			},
+			"testPassFailCounts": {
+				"Should delete 1 item": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Winners[0] = 1": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"3"
+			],
+			"allTests": [
+				{
+					"Should delete 1 item": true,
+					"Winners[0] = 1": true
+				}
+			],
+			"time": "3",
+			"totalRequestTime": "3",
+			"iterationResults": {}
+		},
+		{
+			"name": "get all doodles",
+			"id": "a68fdedd-d0a8-4eb8-b4b3-023068b8cee2",
+			"url": "http://127.0.0.1:5000/doodles",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "Should get the 2 doodles",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Should get the 2 doodles": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"4"
+			],
+			"allTests": [
+				{
+					"Should get the 2 doodles": true
+				}
+			],
+			"time": "4",
+			"totalRequestTime": "4",
+			"iterationResults": {}
+		},
+		{
+			"name": "/doodles delete no more existing",
+			"id": "7ae5449c-874b-4580-8088-4b9f3e6d5ff7",
+			"url": "http://127.0.0.1:5000/doodles/2",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 410,
+				"name": "GONE",
+				"detail": {
+					"name": "Gone",
+					"detail": "Indicates that the resource requested is no longer available and will not be available again. This should be used when a resource has been intentionally removed and the resource should be purged. Upon receiving a 410 status code, the client should not request the resource again in the future. Clients such as search engines should remove the resource from their indices. Most use cases do not require clients and search engines to purge the resource, and a \"404 Not Found\" may be used instead."
+				}
+			},
+			"tests": {
+				"name": "Status code is 410",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 410": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"7"
+			],
+			"allTests": [
+				{
+					"Status code is 410": true
+				}
+			],
+			"time": "7",
+			"totalRequestTime": "7",
+			"iterationResults": {}
+		},
+		{
+			"name": "/doodles delete unexisting",
+			"id": "97eee606-a20c-4087-839c-2ec36713ddc1",
+			"url": "http://127.0.0.1:5000/doodles/23242",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 404,
+				"name": "NOT FOUND",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"tests": {
+				"name": "Status code is 404",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"3"
+			],
+			"allTests": [
+				{
+					"Status code is 404": true
+				}
+			],
+			"time": "3",
+			"totalRequestTime": "3",
+			"iterationResults": {}
+		},
+		{
+			"name": "get doodle 2",
+			"id": "e3efd09a-cef5-4d68-be87-648aa5bb17ea",
+			"url": "http://127.0.0.1:5000/doodles/2",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 410,
+				"name": "GONE",
+				"detail": {
+					"name": "Gone",
+					"detail": "Indicates that the resource requested is no longer available and will not be available again. This should be used when a resource has been intentionally removed and the resource should be purged. Upon receiving a 410 status code, the client should not request the resource again in the future. Clients such as search engines should remove the resource from their indices. Most use cases do not require clients and search engines to purge the resource, and a \"404 Not Found\" may be used instead."
+				}
+			},
+			"tests": {
+				"name": "Status code is 410",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 410": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"3"
+			],
+			"allTests": [
+				{
+					"Status code is 410": true
+				}
+			],
+			"time": "3",
+			"totalRequestTime": "3",
+			"iterationResults": {}
+		},
+		{
+			"name": "/doodles 1 put",
+			"id": "c43318ff-7468-414b-9bb1-cddc444923ff",
+			"url": "http://127.0.0.1:5000/doodles/1",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "Pollnumber should be 2",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Pollnumber should be 2": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"3"
+			],
+			"allTests": [
+				{
+					"Pollnumber should be 2": true
+				}
+			],
+			"time": "3",
+			"totalRequestTime": "3",
+			"iterationResults": {}
+		},
+		{
+			"name": "/doodles 1 put Copy",
+			"id": "dd755618-8e4d-46bc-b374-6f912ebcc4e4",
+			"url": "http://127.0.0.1:5000/doodles/1",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "Winners should be 2",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Winners should be 2": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"3"
+			],
+			"allTests": [
+				{
+					"Winners should be 2": true
+				}
+			],
+			"time": "3",
+			"totalRequestTime": "3",
+			"iterationResults": {}
+		},
+		{
+			"name": "/doodles 1 put Copy",
+			"id": "2ed3df2a-c12b-4fd9-9b86-5afd72649d76",
+			"url": "http://127.0.0.1:5000/doodles/1",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "Winners should be 1",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Winners should be 1": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"2"
+			],
+			"allTests": [
+				{
+					"Winners should be 1": true
+				}
+			],
+			"time": "2",
+			"totalRequestTime": "2",
+			"iterationResults": {}
+		},
+		{
+			"name": "get all doodles by fred",
+			"id": "3510b1cf-29c9-41c8-a3cf-53149cd19dc5",
+			"url": "http://127.0.0.1:5000/doodles/1/fred",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "Should get the 2 doodles",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Should get the 2 doodles": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"3"
+			],
+			"allTests": [
+				{
+					"Should get the 2 doodles": true
+				}
+			],
+			"time": "3",
+			"totalRequestTime": "3",
+			"iterationResults": {}
+		},
+		{
+			"name": "get all doodles by wilma",
+			"id": "2ebcaf37-ca4f-49f6-bff2-8797f666c7b5",
+			"url": "http://127.0.0.1:5000/doodles/1/wilma",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "Should get the 2 doodles",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Should get the 2 doodles": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"2"
+			],
+			"allTests": [
+				{
+					"Should get the 2 doodles": true
+				}
+			],
+			"time": "2",
+			"totalRequestTime": "2",
+			"iterationResults": {}
+		},
+		{
+			"name": "delete all doodles by fred",
+			"id": "a7be184c-5ef4-4adf-87bb-6eea99d6abf4",
+			"url": "http://127.0.0.1:5000/doodles/1/fred",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "Should delete",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Should delete": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"2"
+			],
+			"allTests": [
+				{
+					"Should delete": true
+				}
+			],
+			"time": "2",
+			"totalRequestTime": "2",
+			"iterationResults": {}
+		},
+		{
+			"name": "get all doodles by fred Copy",
+			"id": "ca41c683-194b-44e7-bf59-c0f179ec6490",
+			"url": "http://127.0.0.1:5000/doodles/1/fred",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "Should be empty",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Should be empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"3"
+			],
+			"allTests": [
+				{
+					"Should be empty": true
+				}
+			],
+			"time": "3",
+			"totalRequestTime": "3",
+			"iterationResults": {}
+		},
+		{
+			"name": "delete all doodles by wilma",
+			"id": "41b0ae51-c647-4176-a7fe-6dbbf7d3b7f0",
+			"url": "http://127.0.0.1:5000/doodles/1/wilma",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "Should delete",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Should delete": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"3"
+			],
+			"allTests": [
+				{
+					"Should delete": true
+				}
+			],
+			"time": "3",
+			"totalRequestTime": "3",
+			"iterationResults": {}
+		},
+		{
+			"name": "get all doodles by fred",
+			"id": "4343fb39-8864-44f7-8f0a-eb2af79205f8",
+			"url": "http://127.0.0.1:5000/doodles/1321/fred",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 404,
+				"name": "NOT FOUND",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"tests": {
+				"name": "Status code is 404",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"2"
+			],
+			"allTests": [
+				{
+					"Status code is 404": true
+				}
+			],
+			"time": "2",
+			"totalRequestTime": "2",
+			"iterationResults": {}
+		},
+		{
+			"name": "get all doodles by fred",
+			"id": "1b18be22-e2b3-4284-b22d-6f826f88639b",
+			"url": "http://127.0.0.1:5000/doodles/2/fred",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 410,
+				"name": "GONE",
+				"detail": {
+					"name": "Gone",
+					"detail": "Indicates that the resource requested is no longer available and will not be available again. This should be used when a resource has been intentionally removed and the resource should be purged. Upon receiving a 410 status code, the client should not request the resource again in the future. Clients such as search engines should remove the resource from their indices. Most use cases do not require clients and search engines to purge the resource, and a \"404 Not Found\" may be used instead."
+				}
+			},
+			"tests": {
+				"name": "Status code is 410",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 410": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"5"
+			],
+			"allTests": [
+				{
+					"Status code is 410": true
+				}
+			],
+			"time": "5",
+			"totalRequestTime": "5",
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 31,
+	"totalFail": 0,
+	"totalTime": 116,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "/doodles 1",
+			"id": "50c91453-68fc-4a70-9426-707be8f1e3ac",
+			"url": "http://127.0.0.1:5000/doodles",
+			"time": "2018-10-09T07:08:57.429Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Pollnumber should be 1": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "/doodles 2",
+			"id": "feb4db11-c0b7-4863-9f0e-0911040585dc",
+			"url": "http://127.0.0.1:5000/doodles",
+			"time": "2018-10-09T07:08:57.429Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Pollnumber should be 2": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "/doodles 3",
+			"id": "02220b04-c79c-45e9-aecf-8446af179d1a",
+			"url": "http://127.0.0.1:5000/doodles",
+			"time": "2018-10-09T07:08:57.429Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Pollnumber should be 3": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "get all doodles",
+			"id": "66ee35d7-148d-4db4-95e8-c4d99bbef958",
+			"url": "http://127.0.0.1:5000/doodles",
+			"time": "2018-10-09T07:08:57.429Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Should get the three doodles": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "get doodle 2",
+			"id": "259f5f28-ae87-4754-812b-5f625e162785",
+			"url": "http://127.0.0.1:5000/doodles/2",
+			"time": "2018-10-09T07:08:57.429Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Should get the doodle 2 id": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should get the doodle 2 title": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "get 404 doodle",
+			"id": "8b3344f5-d143-4409-995e-9be1f223be16",
+			"url": "http://127.0.0.1:5000/doodles/2222",
+			"time": "2018-10-09T07:08:57.429Z",
+			"responseCode": {
+				"code": 404,
+				"name": "NOT FOUND",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "/doodles 2 put vote",
+			"id": "5a9bdda2-41cb-42c2-b07a-9e429346e272",
+			"url": "http://127.0.0.1:5000/doodles/2",
+			"time": "2018-10-09T07:08:57.429Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Pollnumber should be 2": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "/doodles 2 put vote 1",
+			"id": "8422dba9-2413-4246-a38d-a639acd4830d",
+			"url": "http://127.0.0.1:5000/doodles/2",
+			"time": "2018-10-09T07:08:57.429Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Winners should be 2": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Winners[0] = 1": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Winners[0] = 2": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "/doodles 2 put vote 2",
+			"id": "d0931771-00c3-4cc6-9274-53665f56f8e0",
+			"url": "http://127.0.0.1:5000/doodles/2",
+			"time": "2018-10-09T07:08:57.429Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Winners should be 1": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Winners[0] = 1": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "/doodles 2 put vote 2 error",
+			"id": "f46381f0-850a-475c-b311-c4816d581c12",
+			"url": "http://127.0.0.1:5000/doodles/2",
+			"time": "2018-10-09T07:08:57.429Z",
+			"responseCode": {
+				"code": 400,
+				"name": "BAD REQUEST",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "/doodles 2 put non exsisting vote",
+			"id": "acd0333f-fda3-461e-8592-dae4f016d592",
+			"url": "http://127.0.0.1:5000/doodles/2",
+			"time": "2018-10-09T07:08:57.429Z",
+			"responseCode": {
+				"code": 400,
+				"name": "BAD REQUEST",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "/doodles 2 delete",
+			"id": "258d1200-4747-4b97-9057-f04edc2f4a22",
+			"url": "http://127.0.0.1:5000/doodles/2",
+			"time": "2018-10-09T07:08:57.429Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Should delete 1 item": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Winners[0] = 1": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "get all doodles",
+			"id": "a68fdedd-d0a8-4eb8-b4b3-023068b8cee2",
+			"url": "http://127.0.0.1:5000/doodles",
+			"time": "2018-10-09T07:08:57.429Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Should get the 2 doodles": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "/doodles delete no more existing",
+			"id": "7ae5449c-874b-4580-8088-4b9f3e6d5ff7",
+			"url": "http://127.0.0.1:5000/doodles/2",
+			"time": "2018-10-09T07:08:57.429Z",
+			"responseCode": {
+				"code": 410,
+				"name": "GONE",
+				"detail": {
+					"name": "Gone",
+					"detail": "Indicates that the resource requested is no longer available and will not be available again. This should be used when a resource has been intentionally removed and the resource should be purged. Upon receiving a 410 status code, the client should not request the resource again in the future. Clients such as search engines should remove the resource from their indices. Most use cases do not require clients and search engines to purge the resource, and a \"404 Not Found\" may be used instead."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 410": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "/doodles delete unexisting",
+			"id": "97eee606-a20c-4087-839c-2ec36713ddc1",
+			"url": "http://127.0.0.1:5000/doodles/23242",
+			"time": "2018-10-09T07:08:57.429Z",
+			"responseCode": {
+				"code": 404,
+				"name": "NOT FOUND",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "get doodle 2",
+			"id": "e3efd09a-cef5-4d68-be87-648aa5bb17ea",
+			"url": "http://127.0.0.1:5000/doodles/2",
+			"time": "2018-10-09T07:08:57.429Z",
+			"responseCode": {
+				"code": 410,
+				"name": "GONE",
+				"detail": {
+					"name": "Gone",
+					"detail": "Indicates that the resource requested is no longer available and will not be available again. This should be used when a resource has been intentionally removed and the resource should be purged. Upon receiving a 410 status code, the client should not request the resource again in the future. Clients such as search engines should remove the resource from their indices. Most use cases do not require clients and search engines to purge the resource, and a \"404 Not Found\" may be used instead."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 410": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "/doodles 1 put",
+			"id": "c43318ff-7468-414b-9bb1-cddc444923ff",
+			"url": "http://127.0.0.1:5000/doodles/1",
+			"time": "2018-10-09T07:08:57.429Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Pollnumber should be 2": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "/doodles 1 put Copy",
+			"id": "dd755618-8e4d-46bc-b374-6f912ebcc4e4",
+			"url": "http://127.0.0.1:5000/doodles/1",
+			"time": "2018-10-09T07:08:57.429Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Winners should be 2": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "/doodles 1 put Copy",
+			"id": "2ed3df2a-c12b-4fd9-9b86-5afd72649d76",
+			"url": "http://127.0.0.1:5000/doodles/1",
+			"time": "2018-10-09T07:08:57.429Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Winners should be 1": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "get all doodles by fred",
+			"id": "3510b1cf-29c9-41c8-a3cf-53149cd19dc5",
+			"url": "http://127.0.0.1:5000/doodles/1/fred",
+			"time": "2018-10-09T07:08:57.429Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Should get the 2 doodles": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "get all doodles by wilma",
+			"id": "2ebcaf37-ca4f-49f6-bff2-8797f666c7b5",
+			"url": "http://127.0.0.1:5000/doodles/1/wilma",
+			"time": "2018-10-09T07:08:57.429Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Should get the 2 doodles": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "delete all doodles by fred",
+			"id": "a7be184c-5ef4-4adf-87bb-6eea99d6abf4",
+			"url": "http://127.0.0.1:5000/doodles/1/fred",
+			"time": "2018-10-09T07:08:57.429Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Should delete": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "get all doodles by fred Copy",
+			"id": "ca41c683-194b-44e7-bf59-c0f179ec6490",
+			"url": "http://127.0.0.1:5000/doodles/1/fred",
+			"time": "2018-10-09T07:08:57.429Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Should be empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "delete all doodles by wilma",
+			"id": "41b0ae51-c647-4176-a7fe-6dbbf7d3b7f0",
+			"url": "http://127.0.0.1:5000/doodles/1/wilma",
+			"time": "2018-10-09T07:08:57.429Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Should delete": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "get all doodles by fred",
+			"id": "4343fb39-8864-44f7-8f0a-eb2af79205f8",
+			"url": "http://127.0.0.1:5000/doodles/1321/fred",
+			"time": "2018-10-09T07:08:57.429Z",
+			"responseCode": {
+				"code": 404,
+				"name": "NOT FOUND",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "get all doodles by fred",
+			"id": "1b18be22-e2b3-4284-b22d-6f826f88639b",
+			"url": "http://127.0.0.1:5000/doodles/2/fred",
+			"time": "2018-10-09T07:08:57.429Z",
+			"responseCode": {
+				"code": 410,
+				"name": "GONE",
+				"detail": {
+					"name": "Gone",
+					"detail": "Indicates that the resource requested is no longer available and will not be available again. This should be used when a resource has been intentionally removed and the resource should be purged. Upon receiving a 410 status code, the client should not request the resource again in the future. Clients such as search engines should remove the resource from their indices. Most use cases do not require clients and search engines to purge the resource, and a \"404 Not Found\" may be used instead."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 410": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		}
+	],
+	"synced": false
+}
