@@ -11,7 +11,7 @@ class Poll():
             if not(person in self.options[vote]):
                 self.options[vote].append(person)
             else:
-                msg = person + "has already voted."
+                msg = person + " has already voted."
                 raise UserAlreadyVotedException(msg)
         else:
             msg = vote + " is not a valid option for the poll."

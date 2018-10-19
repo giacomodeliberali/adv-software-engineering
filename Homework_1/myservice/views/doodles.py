@@ -82,11 +82,18 @@ def create_doodle(request):
     data = request.get_json()
 
     _POLLNUMBER += 1
-    print(data)
-    _ACTIVEPOLLS[_POLLNUMBER] = Poll(
-        _POLLNUMBER, data['title'], data['options'])
 
-    return jsonify({'pollnumber': _POLLNUMBER})
+    newPoll = Poll(
+        _POLLNUMBER,
+        data['title'],
+        data['options']
+    )
+
+    _ACTIVEPOLLS[_POLLNUMBER] = newPoll
+
+    return jsonify({
+        'pollnumber': _POLLNUMBER
+    })
 
 
 def get_all_doodles(request):
